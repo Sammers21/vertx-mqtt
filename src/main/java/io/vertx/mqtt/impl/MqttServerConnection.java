@@ -179,7 +179,7 @@ public class MqttServerConnection {
 
     } else {
 
-      this.chctx.fireExceptionCaught(new Exception("Wrong message type"));
+      this.chctx.fireExceptionCaught(new Exception("Wrong message type " + msg.getClass().getName()));
     }
   }
 
